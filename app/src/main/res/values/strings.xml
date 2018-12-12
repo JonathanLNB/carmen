@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reproductor</string>
+    <string name="sAnterior">Anterior</string>
+    <string name="sSiguiente">Siguiente</string>
+</resources>

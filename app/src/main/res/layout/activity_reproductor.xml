@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonalnb.reproductor.Reproductor">
+
+    <TableLayout
+        android:id="@+id/itabla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bAnterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sAnterior" />
+
+            <Button
+                android:id="@+id/bSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sSiguiente" />
+        </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:id="@+id/tAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itabla"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tAnterior"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iImagen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tImagen"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/vInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </TableRow>
+
+</RelativeLayout>
